@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "thambnail": "https://www.browneyedbaker.com/wp-content/uploads/2020/11/chicken-noodle-soup-8-square-500x500.jpg",
+    "title": "Noodle chicken soup",
+    "level": "Intermediate",
+    "time": 25,
+    "kcal": 95,
+    "type": "Meat",
+    "icon": "GiRoastChicken"
+  },
+  {
+    "id": 2,
+    "thambnail": "https://knowseafood.com/cdn/shop/articles/AdobeStock_169782190.jpg?v=1633627455",
+    "title": "Salad with raw tuna",
+    "level": "Advanced",
+    "time": 25,
+    "kcal": 95,
+    "type": "Fish",
+    "icon": "FaFish"
+  },
+  {
+    "id": 3,
+    "thambnail": "https://www.herwholesomekitchen.com/wp-content/uploads/2021/09/vegan-one-pot-pasta-1-2-2.jpg",
+    "title": "Pasta with spinach",
+    "level": "Beginner",
+    "time": 25,
+    "kcal": 95,
+    "type": "Veg",
+    "icon": "FaLeaf"
+  },
+  {
+    "id": 4,
+    "thambnail": "https://www.inspiredtaste.net/wp-content/uploads/2022/01/Creamy-Chicken-Noodle-Soup-3-1200.jpg",
+    "title": "Noodle chicken soup",
+    "level": "Intermediate",
+    "time": 25,
+    "kcal": 95,
+    "type": "Meat",
+    "icon": "GiRoastChicken"
+  },
+  {
+    "id": 5,
+    "thambnail": "https://www.wholesomeyum.com/wp-content/uploads/2022/05/wholesomeyum-Ahi-Tuna-Salad-25.jpg",
+    "title": "Salad with raw tuna",
+    "level": "Advanced",
+    "time": 25,
+    "kcal": 95,
+    "type": "Fish",
+    "icon": "FaFish"
+  },
+  {
+    "id": 6,
+    "thambnail": "https://cooktoria.com/wp-content/uploads/2019/12/Pasta-with-Spinach-Sauce-sq-1.jpg",
+    "title": "Pasta with spinach",
+    "level": "Beginner",
+    "time": 25,
+    "kcal": 95,
+    "type": "Veg",
+    "icon": "FaLeaf"
+  },
+  {
+    "id": 7,
+    "thambnail": "https://www.acouplecooks.com/wp-content/uploads/2023/05/Spinach-Pasta-005.jpg",
+    "title": "Pasta with spinach",
+    "level": "Beginner",
+    "time": 25,
+    "kcal": 95,
+    "type": "Veg",
+    "icon": "FaLeaf"
+  },
+  {
+    "id": 8,
+    "thambnail": "https://bakerbynature.com/wp-content/uploads/2014/10/IMG_4540-5-2-500x500.jpg",
+    "title": "Noodle chicken soup",
+    "level": "Intermediate",
+    "time": 25,
+    "kcal": 95,
+    "type": "Meat",
+    "icon": "GiRoastChicken"
+  }
+]
