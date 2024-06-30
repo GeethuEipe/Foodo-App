@@ -16,8 +16,7 @@ const RecipeHome = () => {
       setLoading(true)
       try {
         const response = await fetch(
-          './dummyRecipe.json'
-          // 'https://667fe1f856c2c76b495a6c85.mockapi.io/api/list/recipes'
+          'https://667fe1f856c2c76b495a6c85.mockapi.io/api/list/recipes'
         )
 
         if (!response.ok) {
