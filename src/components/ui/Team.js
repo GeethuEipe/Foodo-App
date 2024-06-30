@@ -15,7 +15,7 @@ const Team = () => {
   ]
 
   return (
-    <div className="flex flex-col mb-2 mt-20 md:mt-28">
+    <div className="flex flex-col mb-2 mt-16 md:mt-28">
       <div className="flex items-center justify-center">
         {avatarData.map((avatar, index) => (
           <Avatar key={index} src={avatar.src} size={avatar.size} />
