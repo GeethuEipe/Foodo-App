@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import Loader from '../../components/ui/Loader'
-// import ProCard from './ProCard'
+import ProCard from './ProCard'
 import RecipeCard from './RecipeCard'
 
 const RecipeHome = () => {
@@ -25,7 +25,6 @@ const RecipeHome = () => {
       }
       setLoading(false)
     }
-
     fetchRecipes()
   }, [])
 
@@ -36,7 +35,13 @@ const RecipeHome = () => {
       ) : recipes?.length === 0 ? (
         <div className="text-center text-xl">No data found!</div>
       ) : (
-        recipes.map(recipe => <RecipeCard key={recipe.id} {...recipe} />)
+        recipes.map((recipe, index) =>
+          index === 3 ? (
+            <ProCard key={recipe.id} {...recipe} />
+          ) : (
+            <RecipeCard key={recipe.id} {...recipe} />
+          )
+        )
       )}
     </div>
   )
