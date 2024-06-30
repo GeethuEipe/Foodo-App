@@ -10,7 +10,7 @@ const Hero = () => {
           alt="Profile"
         />
         <div className="flex flex-col">
-          <h1 className="text-xl md:text-4xl font-bold mb-2 font-ribeye">
+          <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold mb-2 font-ribeye">
             {`Only the best recipes!`}
           </h1>
           <p className="text-black/50 text-sm md:text-lg">
@@ -20,13 +20,13 @@ const Hero = () => {
       </div>
       <div className="flex items-center justify-center gap-4 mb-20 mt-4 md:mt-0">
         <div className="border-r border-gray-300 pr-4 md:h-16">
-          <h1 className="text-xl md:text-4xl font-bold mb-1 font-ribeye">
+          <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold mb-1 font-ribeye">
             168
           </h1>
           <p className="text-black/50">Tutorials</p>
         </div>
         <div>
-          <h1 className="text-xl md:text-4xl font-bold mb-1 font-ribeye">
+          <h1 className="text-lg md:text-xl lg:text-2xl xl:text-4xl font-bold mb-1 font-ribeye">
             304
           </h1>
           <p className="text-black/50">Recipes</p>

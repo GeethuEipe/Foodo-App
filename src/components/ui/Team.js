@@ -15,7 +15,7 @@ const Team = () => {
   ]
 
   return (
-    <div className="flex flex-col mb-2">
+    <div className="flex flex-col">
       <div className="flex items-center justify-center">
         {avatarData.map((avatar, index) => (
           <Avatar key={index} src={avatar.src} size={avatar.size} />
@@ -24,7 +24,7 @@ const Team = () => {
           <FaPlus className="text-white" />
         </div>
       </div>
-      <p className="text-center text-sm font-medium">
+      <p className="text-center text-sm font-medium mt-2">
         Create a team and <br /> take part in
         <a href="#" className="underline ml-1">
           TV show!

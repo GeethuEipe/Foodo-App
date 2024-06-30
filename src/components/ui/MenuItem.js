@@ -33,7 +33,7 @@ const MenuItem = ({ icon: Icon, label, href }) => {
   const isActive = currentLocation.pathname === href
 
   return (
-    <li className="group flex gap-2 items-center mb-4 md:mb-6 lg:mb-8">
+    <li className="group flex gap-2 items-center">
       <Icon
         className={`text-black/50 group-hover:text-red-500 group-active:text-red-500 ${
           isActive ? 'text-red-500' : ''
