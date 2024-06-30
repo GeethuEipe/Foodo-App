@@ -4,7 +4,7 @@ import RecipeIcon from '../../components/ui/RecipeIcon'
 
 const RecipeDetails = ({ thambnail, title, level, time, kcal, type, icon }) => {
   return (
-    <div>
+    <section>
       <div className="flex flex-col md:flex-row items-center gap-20 mb-10">
         <img className="h-96 w-96 rounded-md" src={thambnail} alt="img" />
         <div className="flex flex-col items-center">
@@ -26,7 +26,7 @@ const RecipeDetails = ({ thambnail, title, level, time, kcal, type, icon }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 import Loader from '../../components/ui/Loader'
 import ProCard from './ProCard'
 import RecipeCard from './RecipeCard'
+
+const MemoizedRecipeCard = React.memo(RecipeCard)
+const MemoizedProCard = React.memo(ProCard)
 
 const RecipeHome = () => {
   const [recipes, setRecipes] = useState([])
@@ -15,6 +18,7 @@ const RecipeHome = () => {
         const response = await fetch(
           'https://667fe1f856c2c76b495a6c85.mockapi.io/api/list/recipes'
         )
+
         if (!response.ok) {
           throw new Error('Failed to fetch data')
         }
@@ -28,20 +32,24 @@ const RecipeHome = () => {
     fetchRecipes()
   }, [])
 
+  const renderRecipeCard = useCallback((recipe, index) => {
+    return index === 3 ? (
+      <MemoizedProCard key={recipe.id} {...recipe} />
+    ) : (
+      <MemoizedRecipeCard key={recipe.id} {...recipe} />
+    )
+  }, [])
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-x-10 gap-y-16 mb-12 p-6 md:p-0">
+    <div className="flex justify-center items-center">
       {loading ? (
         <Loader />
       ) : recipes?.length === 0 ? (
         <div className="text-center text-xl">No data found!</div>
       ) : (
-        recipes.map((recipe, index) =>
-          index === 3 ? (
-            <ProCard key={recipe.id} {...recipe} />
-          ) : (
-            <RecipeCard key={recipe.id} {...recipe} />
-          )
-        )
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 mb-12 p-6 md:p-0">
+          {recipes.map(renderRecipeCard)}
+        </div>
       )}
     </div>
   )

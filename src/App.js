@@ -11,15 +11,13 @@ import React from 'react'
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/DetailPage/:id" element={<DetailPage />} />
-        <Route path="/Courses" element={<Courses />} />
-        <Route path="/Favourites" element={<Favourites />} />
-        <Route path="/Community" element={<Community />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/DetailPage/:id" element={<DetailPage />} />
+      <Route path="/Courses" element={<Courses />} />
+      <Route path="/Favourites" element={<Favourites />} />
+      <Route path="/Community" element={<Community />} />
+    </Routes>
   )
 }
 

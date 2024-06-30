@@ -3,7 +3,7 @@ import React from 'react'
 const ProCard = () => {
   return (
     <div>
-      <div className="bg-[#5F8575] rounded-xl shadow-md md:w-60 transform transition-transform hover:scale-105 relative group curso text-smr-pointer h-full cursor-pointer">
+      <div className="bg-[#5F8575] rounded-xl transform transition-transform hover:scale-105 relative text-smr-pointer h-full cursor-pointer">
         {/* <div className="absolute">
           <img
             className="object-cover -translate-y-1/3 ml-32"

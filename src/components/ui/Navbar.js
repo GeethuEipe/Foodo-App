@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center  gap-4 md:gap-0 py-7 px-16">
+    <div className="container flex flex-col md:flex-row justify-between items-center  gap-4 md:gap-0 py-7">
       <div className="flex items-center border-b-2  bg-transparent w-72 md:w-96">
         <IoMdSearch size={26} />
         <input

@@ -26,15 +26,16 @@ const RecipeCard = ({
       state: { thambnail, title, level, time, kcal, type, icon, rating }
     })
   }
-
   return (
-    <div className="bg-white rounded-xl shadow-md w-full md:w-60 transform transition-transform hover:scale-105 relative group">
-      <img
-        className="inline-block h-20 w-20 rounded-full ring-2 ring-white -translate-y-10 translate-x-32 md:translate-x-20"
-        src={thambnail}
-        alt="Profile"
-      />
-      <div className="flex flex-col items-center p-4 -mt-8">
+    <div className="bg-white rounded-xl shadow-md w-full transform transition-transform hover:scale-105 relative group">
+      <div className="flex items-center justify-center">
+        <img
+          className="inline-block h-20 w-20 rounded-full ring-2 ring-white -mt-10 md:-mt-8"
+          src={thambnail}
+          alt="Profile"
+        />
+      </div>
+      <div className="flex flex-col items-center p-4">
         <h3 className="text-lg font-bold mb-2">{title}</h3>
         <LevelBadge level={level} />
         <div className="mt-4 flex space-x-4 justify-between text-gray-700">

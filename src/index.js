@@ -10,9 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="bg-[#f87171] md:p-6 h-screen">
-        <App />
-      </div>
+      <App />
     </BrowserRouter>
   </React.StrictMode>
 )
