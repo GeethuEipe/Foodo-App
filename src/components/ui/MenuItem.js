@@ -43,7 +43,7 @@ const MenuItem = ({ icon: Icon, label, href }) => {
       <Link
         to={href}
         className={`text-black/50 group-hover:text-black group-active:text-black ${
-          isActive ? 'text-black' : ''
+          isActive ? '!text-black' : ''
         }`}>
         {label}
       </Link>
