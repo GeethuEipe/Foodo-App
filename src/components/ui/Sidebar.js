@@ -37,7 +37,7 @@ const Sidebar = () => {
             <BsPersonFillAdd style={{ color: 'red' }} />
             37
           </p>
-          <ul className="flex flex-col gap-y-4 md:text-lg flex-grow mt-20">
+          <ul className="flex flex-col gap-y-4 md:text-lg flex-grow mt-16 sm:mt-18 md:mt-20 lg:mt-24 xl:mt-28 mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12 ">
             {menuItems.map((item, idx) => (
               <MenuItem key={idx} {...item} />
             ))}
