@@ -17,7 +17,7 @@ const Sidebar = () => {
         </button>
       </div>
       <div
-        className={`flex flex-col justify-between inset-y-0 left-0 transform ${
+        className={`flex flex-col justify-between inset-y-0 left-0 transform overflow-y-scroll ${
           isOpen ? 'fixed translate-x-0' : 'fixed -translate-x-full'
         } md:relative md:translate-x-0 transition-transform duration-300 ease-in-out bg-white p-6 md:rounded-l-3xl z-40`}>
         <div className="flex flex-col items-center">

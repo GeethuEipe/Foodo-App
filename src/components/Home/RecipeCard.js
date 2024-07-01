@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react'
 
 import { FaStar } from 'react-icons/fa'
 import LevelBadge from '../../components/ui/LevelBadge'
-import RecipeIcon from '../../components/ui/RecipeIcon'
+import RecipeDetail from './RecipeDetail'
 import { useNavigate } from 'react-router-dom'
 
 const RecipeCard = ({
@@ -38,20 +38,7 @@ const RecipeCard = ({
       <div className="flex flex-col items-center p-4">
         <h3 className="text-lg font-bold mb-2">{title}</h3>
         <LevelBadge level={level} />
-        <div className="mt-4 flex space-x-4 justify-between text-gray-700">
-          <p className="border-r pr-4 text-2xl font-bold">
-            {time} <br />
-            <span className="text-sm font-normal text-black/50">Min</span>
-          </p>
-          <p className="border-r pr-4 text-2xl font-bold">
-            {kcal} <br />
-            <span className="text-sm font-normal text-black/50">Kcal</span>
-          </p>
-          <div className="flex flex-col gap-3">
-            <RecipeIcon icon={icon} />
-            <span className="text-black/50">{type}</span>
-          </div>
-        </div>
+        <RecipeDetail time={time} kcal={kcal} type={type} icon={icon} />
         <li className="flex gap-2 items-center mt-8 cursor-pointer">
           {[...Array(5)].map((_, index) => (
             <FaStar
